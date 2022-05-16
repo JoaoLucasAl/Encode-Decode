@@ -1,0 +1,125 @@
+body {
+    background-color: black;
+    font-family: 'Macondo', cursive;
+}
+
+header {
+    background-image: url("https://sm.ign.com/ign_br/screenshot/default/giphy-2_99ec.gif");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #CBFBFB;
+    margin: -8px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.cor1 {
+    color: #891AA5;
+}
+
+.cor2 {
+    color: #F3F98B;
+}
+
+.main {
+    background-image: url("https://i.ytimg.com/vi/41vuqCTd2-U/maxresdefault.jpg");
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid green;
+    border-radius: 1em;
+    background-color: rgba(137, 70, 166, 0.2);
+    flex-wrap: wrap;
+    color: rgb(0, 223, 0);
+}
+
+.options {
+    color: blue;
+    margin-bottom: 30px;
+}
+
+.toEncodeDiv {
+    margin: 15px;
+}
+
+.entrada {
+    border-radius: 5px;
+    width: 300px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.deslocamento {
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#chaveCifraDiv {
+    display: none;
+}
+
+.toDecodeDiv {
+    margin-top: 30px;
+}
+
+textarea {
+    background-color: black;
+    color: rgb(0, 180, 0);
+    border: 1px solid green;
+}
+
+input {
+    background-color: black;
+    color: rgb(0, 180, 0);
+    border: 1px solid green;
+}
+
+button {
+    background-color: #891AA5;
+    border-radius: 8px;
+    border: 1px green solid;
+    color: #CBFBFB;
+    margin: 10px;
+    width: 40%;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: rgb(197, 41, 236)
+}
+
+button:active {
+    transform: translateY(5px);
+}
+
+footer {
+    background-image: url("https://sm.ign.com/ign_br/screenshot/default/giphy-2_99ec.gif");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #CBFBFB;
+    margin: -8px;
+    margin-top: 10px;
+}
+
+.animation {
+    animation: animate 2.2s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}

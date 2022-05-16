@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <!-- "Icon made by Freepik from www.flaticon.com" -->
+    <script src="script.js" defer></script>
+    <title>Codificação</title>
+</head>
+
+<body>
+    <header class="animation">
+        <h1>
+            <span class="cor1">Codificação</span> e
+            <span class="cor2"> Decodificação</span>
+        </h1>
+    </header>
+
+    <div class="main">
+        <h1>Escolha o tipo de codificação que deseja</h1>
+
+        <div class="options">
+            <input type="radio" name="encodeOp" value="base64" id="base64" />
+            <label for="base64" id="base64texto">Base 64</label>
+            <input type="radio" name="encodeOp" value="cifraC" id="cifraC" />
+            <label for=" cifraC" id="cifraCtexto">Cifra de César</label>
+        </div>
+        <div>
+            <label for="toEncodeText">Insira aqui texto que deseja codificar</label>
+            <div class="toEncodeDiv">
+                <textarea type="text" name="toEncodeText" id="toEncode" class="entrada"></textarea>
+            </div>
+            <div id="chaveCifraDiv">
+                <label for="chaveCifra"></label>Insira o deslocamento desejado
+                <div class="toEncodeDiv">
+                    <input type="text" name="chaveCifra" id="chaveCifra" class="deslocamento" />
+                </div>
+            </div>
+
+            <div class="toDecodeDiv">
+                <div><label for="toDecodeText">Texto codificado</label></div>
+                <textarea type="text" name="toDecodeText" id="toDecode" class="entrada"></textarea>
+            </div>
+
+            <div>
+                <button onclick="encode()">Codificar</button>
+                <button onclick="decode()">Decodificar</button>
+            </div>
+        </div>
+    </div>
+    <footer class="animation">
+        <p>Site desenvolvido por João Lucas Alberto Muniz</p>
+    </footer>
+</body>
+
+</html>
